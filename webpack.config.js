@@ -54,7 +54,7 @@ plugins: [
   new HtmlWebpackPlugin({
     template:'template.ejs',
     appMountId: 'react-app-root',
-    title: 'Coffee-House',
+    title: 'Coffee House',
     filename: resolve(__dirname, "build", "index.html"),
   }),
  ]
