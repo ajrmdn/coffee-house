@@ -1,7 +1,11 @@
 import React from "react";
+import Brew from "./Brew";
 
 function BrewList(){
-  return ();
+
+  return (
+    <Brew/>
+  );
 }
 
 export default BrewList;
