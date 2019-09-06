@@ -4,7 +4,11 @@ import Brew from "./Brew";
 function BrewList(){
 
   return (
-    <Brew/>
+    <Brew
+      name="Morning Brew"
+      flavor="Waking up with Lake"
+      brand="Blake Brews"
+      price="$3"/>
   );
 }
 
