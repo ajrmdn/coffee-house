@@ -1,17 +1,25 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-function Brew(){
-  
+function Brew(props){
+
   return (
     <div>
       <hr/>
-      <h3>Name: Morning Brew</h3>
-      <h3>Flavor: Waking up with Lake</h3>
-      <h3>Brand: Blake Brews</h3>
-      <h3>Price: $3</h3>
+      <h3>{props.name}: Morning Brew</h3>
+      <h3>{props.flavor}: Waking up with Lake</h3>
+      <h3>{props.brand}: Blake Brews</h3>
+      <h3>{props.price}: $3</h3>
       <hr/>
     </div>
   );
 }
+
+Ticket.propTypes = {
+  name: PropTypes.string,
+  flavor: PropTypes.string,
+  brand: PropTypes.string,
+  price: PropTypes.string
+};
 
 export default Brew;
