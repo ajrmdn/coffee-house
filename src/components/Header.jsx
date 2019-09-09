@@ -8,7 +8,7 @@ function Header(){
 
   return (
     <div style={headerStyle}>
-      <h1>Welcome to Blakes Cold Brews!</h1>
+    <h1>Welcome to Blakes Cold Brews!</h1>
     <Link to="/">Home</Link> | <Link to="/newbrew">Add Brew</Link>
 
   </div>
