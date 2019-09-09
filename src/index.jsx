@@ -9,6 +9,7 @@ const render = (Component) => {
     <AppContainer>
       <HashRouter>
         <Component/>
+      </HashRouter>
     </AppContainer>,
     document.getElementById('react-app-root')
   );
