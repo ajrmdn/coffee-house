@@ -1,5 +1,5 @@
 import React from 'react';
-function NewBrewForm(){
+function NewBrewForm() {
   return (
     <div>
       <form>
@@ -22,7 +22,8 @@ function NewBrewForm(){
           type='text'
           id='price'
           placeholder='price'/>
-          <button type='submit'>Add Brew!</button>
+
+        <button type='submit'>Add Brew!</button>
       </form>
     </div>
   );

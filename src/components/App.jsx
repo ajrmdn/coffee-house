@@ -1,14 +1,19 @@
 import React from "react";
 import Header from "./Header";
 import BrewList from "./BrewList";
+import { Switch, Route } from 'react-router-dom';
+import NewBrewForm from './NewBrewForm';
 
 
 function App(){
-  
+
   return (
     <div>
       <Header/>
-      <BrewList/>
+      <Switch>
+        <Route exact path='/' component={BrewList} />
+        <Route path='/newbrew' component={NewBrewForm} />
+      </Switch>
     </div>
   );
 }
