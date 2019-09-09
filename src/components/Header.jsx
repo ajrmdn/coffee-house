@@ -2,7 +2,7 @@ import React from "react";
 
 function Header(){
   return (
-    <h1>Welcome to Lakes Cold Brews!</h1>
+    <h1>Welcome to Blakes Cold Brews!</h1>
   );
 }
 
