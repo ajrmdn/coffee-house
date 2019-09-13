@@ -10,11 +10,10 @@ const masterBrewList = [
     flavor: 'Wake up with Lake',
     brand: 'Blake Brews',
     price: '$3',
-    image: reallyAdorableCord
   },
   {
     name: 'Afternoon Walk',
-    flavor: 'Lake Jams',
+    flavor: 'Reflecting with Lake',
     brand: 'Blake Brews',
     price: '$3',
     image: lakeMirror
@@ -37,6 +36,7 @@ const masterBrewList = [
     flavor: 'Napping with Cord',
     brand: 'Blake Brews',
     price: '$3'
+    image: reallyAdorableCord
   },
 ];
 
