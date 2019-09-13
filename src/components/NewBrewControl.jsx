@@ -15,7 +15,7 @@ class NewBrewControl extends React.Component {
     };
   }
 
-  handleShowingBrew  () => {
+  handleShowingBrew = () => {
     this.setState({ brewVisibleOnPage: true });
   };
 
