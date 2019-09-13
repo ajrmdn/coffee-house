@@ -1,7 +1,9 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import Brew from './Brew';
+import NewBrewForm from './NewBrewForm';
 
 class NewBrewControl extends React.Component {
-  class NewBrewControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
