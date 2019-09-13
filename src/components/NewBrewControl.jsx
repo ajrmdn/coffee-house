@@ -11,8 +11,24 @@ class NewTicketControl extends React.Component {
       price: '',
       BrewVisibleOnPage: true,
     };
-  } 
+  }
 
   handleShowingBrew = () => {
-  this.setState({ brewVisibleOnPage: true });
-};
+    this.setState({ brewVisibleOnPage: true });
+  };
+
+  handleNamingBrew = (newName) => {
+    this.setState({ name: newName });
+  };
+
+  handleFlavorBrew = (newFlavor) => {
+    this.setState({ flavor: newFlavor });
+  };
+
+  handleBrandBrew = (newBrand) => {
+    this.setState({ brand: newBrand });
+  };
+
+  handlePricingBrew = (newPrice) => {
+    this.setState({ price: newPrice });
+  };
