@@ -9,7 +9,7 @@ const masterBrewList = [
     name: 'Morning Brew',
     flavor: 'Wake up with Lake',
     brand: 'Blake Brews',
-    price: '$3'
+    price: '$4'
   },
   {
     name: 'Afternoon Walk',
