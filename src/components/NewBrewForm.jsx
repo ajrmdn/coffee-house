@@ -10,7 +10,7 @@ function NewBrewForm(props) {
   function handleNewBrewFormSubmission(event) {
     event.preventDefault();
 
-    props.onNewBrewAdd({
+    props.onAddingNewBrew({
         name: _name.value,
         flavor: _brewery.value,
         brand: _brand.value,
@@ -48,11 +48,7 @@ function NewBrewForm(props) {
 }
 
 NewBrewForm.propTypes = {
-  onShowingBrew: PropTypes.func,
-  onNamingBrew: PropTypes.func,
-  onFlavorBrew: PropTypes.func,
-  onBrandBrew: PropTypes.func,
-  onPricingBrew: PropTypes.func,
+  onAddingNewBrew: PropTypes.func,
 };
 
 export default NewBrewForm;

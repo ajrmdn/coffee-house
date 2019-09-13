@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 
 
-function Brew(props){
+function Brew(props) {
 
   const brewStyles = {
     color: 'red',
