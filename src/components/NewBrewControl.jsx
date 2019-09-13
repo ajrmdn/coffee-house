@@ -1,7 +1,7 @@
 import React from 'react';
 
-class NewTicketControl extends React.Component {
-  class AppControl extends React.Component {
+class NewBrewControl extends React.Component {
+  class NewBrewControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -32,3 +32,39 @@ class NewTicketControl extends React.Component {
   handlePricingBrew = (newPrice) => {
     this.setState({ price: newPrice });
   };
+
+  render() {
+    let currentlyVisibleContent = null;
+
+    if (this.state.brewVisibleOnPage) {
+      currentlyVisibleContent = <Brew
+        name={this.state.name}
+        flavor={this.state.flavor}
+        brand={this.state.brand}
+        price={this.state.price} />;
+
+    } else {
+      currentlyVisibleContent = <NewForm
+        onShowingBrew={this.handleShowingBrew}
+        onNamingBrew={this.handleNamingBrew}
+        onFlavorBrew={this.handleFlavorBrew}
+        onBrandBrew={this.handleBrandBrew}
+        onPricingBrew={this.handlePricingBrew} />;
+    };
+
+    return (
+      <div>
+         {currentlyVisibleContent}
+      </div>
+    );
+  }
+}
+NewBrewControl.propTypes = {
+  onShowingBrew: PropTypes.func,
+  onNamingBrew: PropTypes.func,
+  onFlavorBrew: PropTypes.func,
+  onBrandBrew: PropTypes.func,
+  onPricingBrew: PropTypes.func,
+};
+
+export default NewBrewControl;

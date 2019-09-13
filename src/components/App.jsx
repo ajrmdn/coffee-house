@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import BrewList from "./BrewList";
 import { Switch, Route } from 'react-router-dom';
-import NewBrewForm from './NewBrewForm';
+import NewBrewControler from './NewBrewC';
 
 
 function App(){
