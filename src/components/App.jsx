@@ -21,7 +21,7 @@ class App extends React.Component  {
     this.setState({ masterBrewList: newMasterBrewList });
   };
 
-  render() {
+  render(){
     return (
       <div>
         <Header/>

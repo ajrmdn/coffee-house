@@ -19,7 +19,7 @@ function NewBrewForm(props) {
 
     return (
       <div>
-        <form>
+        <form onSubmit={handleNewBrewFormSubmission}>
           <input
             type='text'
             id='name'
