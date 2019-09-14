@@ -7,7 +7,7 @@ function BrewList(props) {
   return (
     <div>
       <hr/>
-      {props.BrewList.map((brew, index) =>
+      {props.brewList.map((brew, index) =>
         <Brew name={brew.name}
           flavor={brew.flavor}
           brand={brew.brand}
