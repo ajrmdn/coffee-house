@@ -19,9 +19,9 @@ class App extends React.Component  {
     let newMasterBrewList = this.state.masterBrewList.slice();
     newMasterBrewList.push(newBrew);
     this.setState({ masterBrewList: newMasterBrewList });
-  };
+  }
 
-  render(){
+  render() {
     return (
       <div>
         <Header/>
